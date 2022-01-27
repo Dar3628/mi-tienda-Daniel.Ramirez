@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+.CartIcon{
+  height: 64px;
+  width: 100px;
+}

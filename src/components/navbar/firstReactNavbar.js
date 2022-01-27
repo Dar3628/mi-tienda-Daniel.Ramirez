@@ -5,7 +5,8 @@ const firstReactNavbar = () => {
     return (
         <Navbar bg="light" expand="lg">
   <Container>
-    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <CartIcon />
+    <Navbar.Brand href="#home">Navegando React</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
 
@@ -22,8 +23,7 @@ const firstReactNavbar = () => {
             </NavDropdown>
         </Nav>
     </Navbar.Collapse>
-    <CartIcon />
-  </Container>
+  </Container>  
 </Navbar>
     )
 
