@@ -1,3 +1,5 @@
+import Counter from "../counter/Counter";
+
 const Item = ({name, price, id, setSelectedItem, otherFunction}) => {
 const selectItem = () => setSelectedItem ({name, price, id });
 
@@ -11,6 +13,7 @@ const selectItem = () => setSelectedItem ({name, price, id });
             <button onClick={otherFunction}>
                 Imprimir en consola
             </button>
+            <Counter stock={10} />
             <hr />
         </div>    
     )
