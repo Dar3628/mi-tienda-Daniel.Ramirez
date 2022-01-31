@@ -1,16 +1,22 @@
-const Item = ({name, price, id, setselectedItem})
-const selectedItem = () => {};
+const Item = ({name, price, id, setSelectedItem, otherFunction}) => {
+const selectItem = () => setSelectedItem ({name, price, id });
 
-const Item = ({name, price, setSelectedItem}) => {
-  return (
-    <div>
-        <h2>Nombre del Producto: {name}</h2>
-        <h2>Precio del Producto : {price}</h2>
-        <button onClick={() => setSelectedItem(id)}>Seleccionar producto</button>
-        <hr />
-    </div>
-  )
-}
+    return (
+        <div>
+            <h2> Nombre del producto : {name} </h2>
+            <h2> Precio del producto : {price} </h2>
+            <button onClick={ selectItem}>
+                Seleccionar producto
+            </button>
+            <button onClick={otherFunction}>
+                Imprimir en consola
+            </button>
+            <hr />
+        </div>    
+    )
+
+   
+};
 
 Item.propTypes = {
 
